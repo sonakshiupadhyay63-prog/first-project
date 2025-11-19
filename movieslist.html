@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Ghibli Movie List</title>
+  <style>
+    body {
+      background-image: url("/1198869-3840x1080-desktop-dual-screen-studio-ghibli-background.jpg");
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .movie-list {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      /* flex-wrap: wrap; */
+      margin-top: 40px;
+    }
+
+    .movie-card {
+      height: 220px;
+      width: 160px;
+      border-radius: 12px;
+      /* overflow: hidden; */
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      display:flex;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-card img,
+    .movie-card video {
+      position: absolute;
+      /* top: 0; */
+      /* left: 0; */
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: opacity 0.4s ease;
+    }
+
+    .movie-card video {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .movie-card:hover video {
+      opacity: 1;
+    }
+
+    .movie-card::after {
+      content: "Lear more→";
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      right: 8px;
+      background: rgba(76, 110, 75, 0.59);
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      opacity: 0;
+      border-radius: 6px;
+      transition: opacity 0.3s;
+    }
+
+    .movie-card:hover::after {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+    
+  <!-- 1st list -->
+  <div class="movie-list">
+    <a href="https://en.wikipedia.org/wiki/Howl%27s_Moving_Castle_(film)" target="_blank" class="movie-card">
+      <img src="/undefined (2).jpg" alt="Howl's Moving Castle">
+      <video src="/f57196eee4bcd40c5ed7e94589fd6b97.mp4" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank" class="movie-card">
+      <img src="/Spirited Away (2001).jpg" alt="Spirited Away">
+      <video src="/c83eddb6f5facc9c41f8288d8680094b.mp4" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/When_Marnie_Was_There" target="_blank" class="movie-card">
+      <img src="/WHEN MARNIE WAS THERE.jpg" alt="When Marnie Was There">
+      <video src="/3f0db018f9033e6a9c80092f9e90b244.mp4" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/My_Neighbor_Totoro" target="_blank" class="movie-card">
+      <img src="/undefined (3).jpg" alt="My Neighbor Totoro">
+      <video src="/acc78738a83f710c4d8f17d0cfdf122b.mp4" muted loop autoplay></video>
+    </a>
+  </div>
+
+  <!-- 2nd list -->
+  <div class="movie-list">
+    <a href="https://en.wikipedia.org/wiki/Kiki%27s_Delivery_Service" target="_blank" class="movie-card">
+      <img src="/Kikis Delivery Service.jpg" alt="Kiki's Delivery Service">
+      <video src="/9167f1139528127ca342baea78fa576f.mp4" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/The_Secret_World_of_Arrietty" target="_blank" class="movie-card">
+      <img src="/The secret world of Arrietty.jpg" alt="The Secret World of Arrietty">
+      <video src="/221ccc83943402749ec5f3a115604ec8.mp4" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/The_Wind_Rises" target="_blank" class="movie-card">
+      <img src="/The Wind Rises (2013).jpg" alt="The Wind Rises">
+      <video src="/1d0c9fa8c5426b51d3c43e0a13ee859d.mp4" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/The_Cat_Returns" target="_blank" class="movie-card">
+      <img src="/undefined (4).jpg" alt="The Cat Returns">
+      <video src="/64f615888c5aa0e9ed0fb58a812584c8_720w.mp4" muted loop autoplay></video>
+    </a>
+  </div>
+
+  <!-- 3rd list -->
+  <div class="movie-list">
+    <a href="https://en.wikipedia.org/wiki/Princess_Mononoke" target="_blank" class="movie-card">
+      <img src="/undefined (5).jpg" alt="Princess Mononoke">
+      <video src="/4d0d263af2419e47d93d11d546017cbe.mp4" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/Ponyo" target="_blank" class="movie-card">
+      <img src="/Ponyo.jpg" alt="Ponyo">
+      <video src="/e1572a06772ae477c37300b3e0f12c86.mp4" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/From_Up_on_Poppy_Hill" target="_blank" class="movie-card">
+      <img src="/From Up on Poppy Hill.jpg" alt="From Up on Poppy Hill">
+      <video src="/4046f951c8d2c420ecc4aa7c4e1a2f2b.mp4" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/Whisper_of_the_Heart" target="_blank" class="movie-card">
+      <img src="/undefined (6).jpg" alt="Whisper of the Heart">
+      <video src="/a887c9791951dc9f667e6c4f3f176067.mp4" muted loop autoplay></video>
+    </a>
+  </div>
+
+  <!-- 4th list -->
+  <div class="movie-list">
+    <a href="https://en.wikipedia.org/wiki/Grave_of_the_Fireflies" target="_blank" class="movie-card">
+      <img src="/download (11).jpg" alt="Grave of the fireflies">
+      <video src="" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/Castle_in_the_Sky" target="_blank" class="movie-card">
+      <img src="/download (12).jpg" alt="Laputa:Castle in the sky">
+      <video src="" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/Ocean_Waves" target="_blank" class="movie-card">
+      <img src="/download (13).jpg" alt="Ocean Waves">
+      <video src="" muted loop autoplay></video>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/Only_Yesterday_(1991_film)" target="_blank" class="movie-card">
+      <img src="/Only Yesterday ⁽¹⁹⁹¹⁾.jpg" alt="Only Yesterday">
+      <video src="" muted loop autoplay></video>
+    </a>
+  </div>
+
+</body>
+</html>
